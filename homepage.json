@@ -1,0 +1,101 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "De Staat van Volksgezondheid en Zorg"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#rijkslogo > a.active"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Financiële middelen"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Samenvatting"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Publicaties"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Over de Staat"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Direct naar Financiële middelen"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers per thema"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers per levensfase"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers van A-Z"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[1]/a/p[2]"
+      }
+    },
+    {
+      "type": "goBack"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[2]"
+      }
+    },
+    {
+      "type": "goBack"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[3]"
+      }
+    },
+    {
+      "type": "goBack"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
