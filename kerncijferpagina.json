@@ -1,0 +1,43 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Kerncijfers"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Home"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Overzicht Kerncijfers"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#breadcrumb > a"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
