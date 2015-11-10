@@ -142,7 +142,11 @@
       "text": "Tego"
     },
     {
-      "type": "goBack"
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
     },
     {
       "type": "print",
