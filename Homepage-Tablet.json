@@ -9,8 +9,8 @@
     },
     {
       "type": "setWindowSize",
-      "width": "770",
-      "height": "768"
+      "width": "1024",
+      "height": "1080"
     },
     {
       "type": "refresh"
@@ -47,8 +47,8 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "id",
-        "value": "menu-button"
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Home']"
       }
     },
     {
@@ -161,34 +161,25 @@
       "text": "Kerncijfers van A-Z"
     },
     {
-      "type": "clickElement",
+      "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
         "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[1]/a/p[2]"
       }
     },
     {
-      "type": "goBack"
-    },
-    {
-      "type": "clickElement",
+      "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
         "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[2]"
       }
     },
     {
-      "type": "goBack"
-    },
-    {
-      "type": "clickElement",
+      "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
         "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[3]"
       }
-    },
-    {
-      "type": "goBack"
     },
     {
       "type": "print",
