@@ -1,0 +1,20 @@
+{
+  "type": "suite",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "scripts": [
+    {
+      "where": "github",
+      "path": "Homepage-Desktop.json"
+    },
+    {
+      "where": "github",
+      "path": "Homepage-Mobile.json"
+    },
+    {
+      "where": "github",
+      "path": "Homepage-Tablet.json"
+    }
+  ],
+  "shareState": false
+}
