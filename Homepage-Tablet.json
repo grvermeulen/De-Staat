@@ -10,7 +10,7 @@
     {
       "type": "setWindowSize",
       "width": "770",
-      "height": "1280"
+      "height": "768"
     },
     {
       "type": "refresh"
@@ -119,6 +119,32 @@
       }
     },
     {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
+      },
+      "text": "tego"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit-ds-kernvragen-search"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Overzicht Kerncijfers"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Tego"
+    },
+    {
+      "type": "goBack"
+    },
+    {
       "type": "print",
       "text": "BLOKKEN"
     },
@@ -165,6 +191,10 @@
       "type": "goBack"
     },
     {
+      "type": "print",
+      "text": "SNELKOPPELING"
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "link text",
@@ -172,38 +202,65 @@
       }
     },
     {
-      "type": "verifyTextPresent",
-      "text": "Contact"
+      "type": "print",
+      "text": "OVER DE STAAT"
     },
     {
-      "type": "verifyTextPresent",
-      "text": "Disclaimer"
-    },
-    {
-      "type": "setElementText",
+      "type": "verifyElementPresent",
       "locator": {
-        "type": "id",
-        "value": "edit-search-api-views-fulltext"
-      },
-      "text": "tego"
+        "type": "css selector",
+        "value": "h2.footer-title"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-0283faee3b03a8e007f7e23dd8c971a1']/div/div/div/p[2]"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#block-menu-menu-servicemenu--2 > ul.menu > li.first.leaf > a.active"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#block-menu-menu-servicemenu--2 > ul.menu > li.last.leaf > a.active"
+      }
+    },
+    {
+      "type": "print",
+      "text": "PARTNERS"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#block-menu-menu-partners > header > h2"
+      }
     },
     {
       "type": "clickElement",
       "locator": {
-        "type": "id",
-        "value": "edit-submit-ds-kernvragen-search"
+        "type": "css selector",
+        "value": "#block-menu-menu-partners > header > h2"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#block-menu-menu-partners > header > h2"
       }
     },
     {
       "type": "verifyTextPresent",
-      "text": "Overzicht Kerncijfers"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "Tego"
-    },
-    {
-      "type": "goBack"
+      "text": "RIVM"
     }
   ],
   "data": {
