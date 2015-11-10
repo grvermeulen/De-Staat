@@ -48,7 +48,7 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//a[@id='menu-button']"
+        "value": "//nav[@id='main-menu']//a[.='Home']"
       }
     },
     {
