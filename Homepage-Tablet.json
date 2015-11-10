@@ -1,0 +1,215 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+    },
+    {
+      "type": "setWindowSize",
+      "width": "770",
+      "height": "1280"
+    },
+    {
+      "type": "refresh"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "De Staat van Volksgezondheid en Zorg"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#rijkslogo > a.active"
+      }
+    },
+    {
+      "type": "print",
+      "text": "MAIN MENU:"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "menu-button"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "menu-button"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Financiële middelen']"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Publicaties']"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Kerncijfers']"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Samenvatting']"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Over de Staat']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKBOX KERNCIJFERS"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-0119fa2142bb85e245be366fd7ae05f7']/header/h1"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div/section[1]/h2"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div/section[1]/form/div/div/div/div[1]/div/div/input[1]"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "BLOKKEN"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers per thema"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers per levensfase"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Kerncijfers van A-Z"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[1]/a/p[2]"
+      }
+    },
+    {
+      "type": "goBack"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[2]"
+      }
+    },
+    {
+      "type": "goBack"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[3]"
+      }
+    },
+    {
+      "type": "goBack"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Direct naar Financiële middelen"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Contact"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Disclaimer"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
+      },
+      "text": "tego"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit-ds-kernvragen-search"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Overzicht Kerncijfers"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Tego"
+    },
+    {
+      "type": "goBack"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
