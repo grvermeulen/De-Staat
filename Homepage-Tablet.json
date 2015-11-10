@@ -9,7 +9,7 @@
     },
     {
       "type": "setWindowSize",
-      "width": "1024",
+      "width": "768",
       "height": "1080"
     },
     {
@@ -48,7 +48,7 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Home']"
+        "value": "//a[@id='menu-button']"
       }
     },
     {
@@ -164,21 +164,21 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[1]/a/p[2]"
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[1]"
       }
     },
     {
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[2]"
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[2]"
       }
     },
     {
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[3]"
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[3]"
       }
     },
     {
@@ -238,15 +238,8 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "css selector",
-        "value": "#block-menu-menu-partners > header > h2"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "#block-menu-menu-partners > header > h2"
+        "type": "xpath",
+        "value": "//nav[@id='block-menu-menu-partners']//h2[.='Partners']"
       }
     },
     {
