@@ -9,7 +9,7 @@
     },
     {
       "type": "setWindowSize",
-      "width": "768",
+      "width": "1024",
       "height": "1080"
     },
     {
@@ -164,21 +164,21 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[1]/a/p[2]"
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[1]"
       }
     },
     {
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[2]"
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[2]"
       }
     },
     {
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/div[3]"
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[3]"
       }
     },
     {
