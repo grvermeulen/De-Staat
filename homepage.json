@@ -90,6 +90,47 @@
     },
     {
       "type": "goBack"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Direct naar Financiële middelen"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Contact"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Disclaimer"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
+      },
+      "text": "tego"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit-ds-kernvragen-search"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Overzicht Kerncijfers"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Tego"
+    },
+    {
+      "type": "goBack"
     }
   ],
   "data": {
