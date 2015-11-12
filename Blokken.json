@@ -1,0 +1,88 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "print",
+      "text": "BLOK 1: PER THEMA"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "BLOK 2: PER LEVENSFASE"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[2]/p[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "BLOK 2: A-Z LIJST"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
