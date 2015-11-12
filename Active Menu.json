@@ -1,0 +1,57 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-t.rivm.nl/staat/kerncijfers"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Kerncijfers"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[1]/nav/ul/li[2]/a"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "a.active-trail.active"
+      }
+    },
+    {
+      "type": "storeElementValue",
+      "locator": {
+        "type": "css selector",
+        "value": "a.active-trail.active"
+      },
+      "variable": "status"
+    },
+    {
+      "type": "print",
+      "text": "value is ${status}"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Kerncijfers"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
