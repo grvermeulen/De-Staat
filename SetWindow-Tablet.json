@@ -11,6 +11,9 @@
       "type": "setWindowSize",
       "width": "768",
       "height": "1080"
+    },
+    {
+      "type": "refresh"
     }
   ],
   "data": {
