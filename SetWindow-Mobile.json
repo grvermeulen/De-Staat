@@ -11,6 +11,9 @@
       "type": "setWindowSize",
       "width": "320",
       "height": "480"
+    },
+    {
+      "type": "refresh"
     }
   ],
   "data": {
