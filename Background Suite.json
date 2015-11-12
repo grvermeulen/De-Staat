@@ -1,0 +1,32 @@
+{
+  "type": "suite",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "scripts": [
+    {
+      "where": "github",
+      "path": "SetWindow-Desktop.json"
+    },
+    {
+      "where": "github",
+      "path": "Background.json"
+    },
+    {
+      "where": "github",
+      "path": "SetWindow-Mobile.json"
+    },
+    {
+      "where": "github",
+      "path": "Background.json"
+    },
+    {
+      "where": "github",
+      "path": "SetWindow-Tablet.json"
+    },
+    {
+      "where": "github",
+      "path": "Background.json"
+    }
+  ],
+  "shareState": false
+}
