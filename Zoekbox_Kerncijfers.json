@@ -12,24 +12,28 @@
       "text": "VUL ZOEKTERM KERNCIJFER ZOEKBOX"
     },
     {
+      "type": "storeText",
+      "locator": {
+        "type": "css selector",
+        "value": "#block-views-0119fa2142bb85e245be366fd7ae05f7 > h2"
+      },
+      "variable": "autocomplete"
+    },
+    {
       "type": "setElementText",
       "locator": {
         "type": "xpath",
         "value": "//input[@id='edit-search-api-views-fulltext']"
       },
-      "text": "Tego"
+      "text": "${autocomplete}"
     },
     {
-      "type": "storeText",
-      "locator": {
-        "type": "xpath",
-        "value": "//input[@id='edit-search-api-views-fulltext']"
-      },
-      "variable": "autocomplete"
+      "type": "waitForTextPresent",
+      "text": "${autocomplete}"
     },
     {
       "type": "print",
-      "text": "${autocomplete}"
+      "text": "Mijn zoekterm is ${autocomplete}"
     },
     {
       "type": "clickElement",
@@ -61,7 +65,7 @@
       "type": "verifyText",
       "locator": {
         "type": "xpath",
-        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2/a/b"
+        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2"
       },
       "text": "${autocomplete)"
     },
@@ -75,10 +79,6 @@
         "type": "xpath",
         "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2"
       }
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "Gemino Jumentum Letalis Lobortis Luptatum Metuo Nostrud Proprius Quae Quia Refero Saepius Tego Uxor Venio"
     },
     {
       "type": "print",
