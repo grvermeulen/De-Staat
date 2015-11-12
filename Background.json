@@ -1,0 +1,30 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+    },
+    {
+      "type": "refresh"
+    },
+    {
+      "type": "verifyElementStyle",
+      "negated": true,
+      "locator": {
+        "type": "id",
+        "value": "main"
+      },
+      "propertyName": "background-image",
+      "value": "url(\"http://webcmsl02-ext-t.rivm.nl/staat/sites/default/files/achtergrond.jpg\")"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
