@@ -62,10 +62,14 @@
       }
     },
     {
+      "type": "print",
+      "text": "CONTROLEER RESULTAAT AANWEZIG"
+    },
+    {
       "type": "verifyText",
       "locator": {
-        "type": "xpath",
-        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2"
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
       },
       "text": "${autocomplete)"
     },
@@ -77,19 +81,23 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2"
+        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2/a"
       }
     },
     {
       "type": "print",
-      "text": "PAGER"
+      "text": "KERNCIJFER DETAIL PAGINA"
     },
     {
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div/div/div[2]/div[2]/div[3]/div[3]/ul"
+        "value": "//div/div/div[2]/div[1]/h1"
       }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "${autocomplete}"
     }
   ],
   "data": {
