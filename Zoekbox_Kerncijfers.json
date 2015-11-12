@@ -1,0 +1,101 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+    },
+    {
+      "type": "print",
+      "text": "VUL ZOEKTERM KERNCIJFER ZOEKBOX"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-search-api-views-fulltext']"
+      },
+      "text": "Tego"
+    },
+    {
+      "type": "storeText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-search-api-views-fulltext']"
+      },
+      "variable": "autocomplete"
+    },
+    {
+      "type": "print",
+      "text": "${autocomplete}"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit-ds-kernvragen-search"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Overzicht Kerncijfers"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "resultaten"
+    },
+    {
+      "type": "print",
+      "text": "RESULTATEN OVERZICHT"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='content']/div[3]/div[2]/ul"
+      }
+    },
+    {
+      "type": "verifyText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2/a/b"
+      },
+      "text": "${autocomplete)"
+    },
+    {
+      "type": "print",
+      "text": "SELECTEER 1e RESULTAAT"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Gemino Jumentum Letalis Lobortis Luptatum Metuo Nostrud Proprius Quae Quia Refero Saepius Tego Uxor Venio"
+    },
+    {
+      "type": "print",
+      "text": "PAGER"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div[2]/div[3]/div[3]/ul"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
