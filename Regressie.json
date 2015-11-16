@@ -57,10 +57,6 @@
     },
     {
       "where": "github",
-      "path": "MainMenu.json"
-    },
-    {
-      "where": "github",
       "path": "Footer.json"
     },
     {
