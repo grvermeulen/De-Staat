@@ -12,13 +12,6 @@
       "text": "VUL ZOEKTERM KERNCIJFER ZOEKBOX"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "h1"
-      }
-    },
-    {
       "type": "storeText",
       "locator": {
         "type": "css selector",
