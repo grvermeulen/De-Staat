@@ -1,223 +1,92 @@
 {
-  "type": "script",
+  "type": "suite",
   "seleniumVersion": "2",
-  "formatVersion": 2,
-  "steps": [
+  "formatVersion": 1,
+  "scripts": [
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='menu-button']"
-      }
+      "where": "github",
+      "path": "SetWindow-Desktop.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Home']"
-      }
+      "where": "github",
+      "path": "ServiceMenu.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Kerncijfers']"
-      }
+      "where": "github",
+      "path": "MainMenu.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Financiële middelen']"
-      }
+      "where": "github",
+      "path": "Zoekbox_Kerncijfers.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Samenvatting']"
-      }
+      "where": "github",
+      "path": "Blokken.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Publicaties']"
-      }
+      "where": "github",
+      "path": "DirectNaar.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Over de Staat']"
-      }
+      "where": "github",
+      "path": "Footer.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Home']"
-      }
+      "where": "github",
+      "path": "SetWindow-Mobile.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "#main-menu > ul.menu > li.first.leaf > a.active"
-      }
+      "where": "github",
+      "path": "ServiceMenu.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "img.logotype"
-      }
+      "where": "github",
+      "path": "MainMenu_Mobile+Tablet.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='menu-button']"
-      }
+      "where": "github",
+      "path": "Zoekbox_Kerncijfers.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Kerncijfers']"
-      }
+      "where": "github",
+      "path": "Blokken.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "a.active-trail.active"
-      }
+      "where": "github",
+      "path": "DirectNaar.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "img.logotype"
-      }
+      "where": "github",
+      "path": "Footer.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='menu-button']"
-      }
+      "where": "github",
+      "path": "SetWindow-Tablet.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Financiële middelen']"
-      }
+      "where": "github",
+      "path": "ServiceMenu.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "a.active-trail.active"
-      }
+      "where": "github",
+      "path": "MainMenu_Mobile+Tablet.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "img.logotype"
-      }
+      "where": "github",
+      "path": "Zoekbox_Kerncijfers.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='menu-button']"
-      }
+      "where": "github",
+      "path": "Blokken.json"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Samenvatting']"
-      }
+      "where": "github",
+      "path": "DirectNaar.json"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "a.active-trail.active"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "img.logotype"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='menu-button']"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Publicaties']"
-      }
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "a.active-trail.active"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "img.logotype"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='menu-button']"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Over de Staat']"
-      }
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "a.active-trail.active"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "img.logotype"
-      }
+      "where": "github",
+      "path": "Footer.json"
     }
   ],
-  "data": {
-    "configs": {},
-    "source": "none"
-  },
-  "inputs": [],
-  "timeoutSeconds": 60
+  "shareState": false
 }
