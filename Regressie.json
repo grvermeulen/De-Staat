@@ -1,0 +1,96 @@
+{
+  "type": "suite",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "scripts": [
+    {
+      "where": "github",
+      "path": "SetWindow-Desktop.json"
+    },
+    {
+      "where": "github",
+      "path": "ServiceMenu.json"
+    },
+    {
+      "where": "github",
+      "path": "MainMenu.json"
+    },
+    {
+      "where": "github",
+      "path": "Zoekbox_Kerncijfers.json"
+    },
+    {
+      "where": "github",
+      "path": "Blokken.json"
+    },
+    {
+      "where": "github",
+      "path": "DirectNaar.json"
+    },
+    {
+      "where": "github",
+      "path": "Footer.json"
+    },
+    {
+      "where": "github",
+      "path": "SetWindow-Mobile.json"
+    },
+    {
+      "where": "github",
+      "path": "ServiceMenu.json"
+    },
+    {
+      "where": "github",
+      "path": "MainMenu_Mobile+Tablet.json"
+    },
+    {
+      "where": "github",
+      "path": "Zoekbox_Kerncijfers.json"
+    },
+    {
+      "where": "github",
+      "path": "Blokken.json"
+    },
+    {
+      "where": "github",
+      "path": "DirectNaar.json"
+    },
+    {
+      "where": "github",
+      "path": "MainMenu.json"
+    },
+    {
+      "where": "github",
+      "path": "Footer.json"
+    },
+    {
+      "where": "github",
+      "path": "SetWindow-Tablet.json"
+    },
+    {
+      "where": "github",
+      "path": "ServiceMenu.json"
+    },
+    {
+      "where": "github",
+      "path": "MainMenu_Mobile+Tablet.json"
+    },
+    {
+      "where": "github",
+      "path": "Zoekbox_Kerncijfers.json"
+    },
+    {
+      "where": "github",
+      "path": "Blokken.json"
+    },
+    {
+      "where": "github",
+      "path": "DirectNaar.json"
+    },
+    {
+      "where": "github",
+      "path": "Footer.json"
+    }
+  ],
+  "shareState": false
+}
