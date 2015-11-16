@@ -21,7 +21,7 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Financiële middelen']"
+        "value": "//div/div/div[1]/nav/ul/li[3]/a"
       }
     },
     {
@@ -112,7 +112,7 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//nav[@id='main-menu']//a[.='Financiële middelen']"
+        "value": "//div/div/div[1]/nav/ul/li[3]/a"
       }
     },
     {
