@@ -4,6 +4,13 @@
   "formatVersion": 2,
   "steps": [
     {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
       "type": "print",
       "text": "BLOK 1: PER THEMA"
     },
