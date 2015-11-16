@@ -27,8 +27,8 @@
     {
       "type": "verifyElementPresent",
       "locator": {
-        "type": "link text",
-        "value": "Samenvatting"
+        "type": "xpath",
+        "value": "//nav[@id='main-menu']//a[.='Samenvatting']"
       }
     },
     {
