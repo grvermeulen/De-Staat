@@ -72,8 +72,8 @@
     {
       "type": "verifyElementPresent",
       "locator": {
-        "type": "xpath",
-        "value": "//div/div/div[2]/div[2]/div[1]/section/form/div/div/div/div[1]/div/div/input[1]"
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
       }
     },
     {
@@ -100,7 +100,7 @@
       "type": "storeElementValue",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='content']/div[3]/div[2]/ol/li[1]"
+        "value": "//div[@id='content']/div[2]/div[2]/ol/li[1]"
       },
       "variable": "resultaat"
     },
@@ -108,7 +108,7 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='content']/div[3]/div[2]/ol/li[1]"
+        "value": "//div/div/div[2]/div[2]/div[2]/div[2]/ol/li[1]"
       }
     },
     {
