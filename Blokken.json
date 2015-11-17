@@ -29,6 +29,13 @@
       }
     },
     {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='content']//a[.='Levensfase(actieve tabblad)']"
+      }
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "css selector",
@@ -54,6 +61,13 @@
       }
     },
     {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='content']//a[.='Levensfase(actieve tabblad)']"
+      }
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "css selector",
@@ -76,6 +90,13 @@
       "locator": {
         "type": "xpath",
         "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[3]"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='content']//a[.='Alfabetisch(actieve tabblad)']"
       }
     },
     {
