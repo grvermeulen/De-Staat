@@ -12,12 +12,24 @@
       "text": "VUL ZOEKTERM KERNCIJFER ZOEKBOX"
     },
     {
-      "type": "storeText",
+      "type": "setElementText",
       "locator": {
-        "type": "css selector",
-        "value": "#block-views-0119fa2142bb85e245be366fd7ae05f7 > h2"
+        "type": "xpath",
+        "value": "//input[@id='edit-search-api-views-fulltext']"
+      },
+      "text": "Kerncijfers voor beleid"
+    },
+    {
+      "type": "storeElementValue",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-search-api-views-fulltext']"
       },
       "variable": "autocomplete"
+    },
+    {
+      "type": "print",
+      "text": "Mijn zoekterm is ${autocomplete}"
     },
     {
       "type": "setElementText",
@@ -30,10 +42,6 @@
     {
       "type": "waitForTextPresent",
       "text": "${autocomplete}"
-    },
-    {
-      "type": "print",
-      "text": "Mijn zoekterm is ${autocomplete}"
     },
     {
       "type": "clickElement",
@@ -92,7 +100,7 @@
       "type": "storeElementValue",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='content']//b[.='Kerncijfers']"
+        "value": "//div[@id='content']/div[3]/div[2]/ol/li[1]"
       },
       "variable": "resultaat"
     },
@@ -127,15 +135,47 @@
       "text": "KERNCIJFER DETAIL PAGINA MET H1 EN TEKST"
     },
     {
-      "type": "verifyElementPresent",
+      "type": "verifyText",
       "locator": {
         "type": "xpath",
         "value": "//div/div/div[2]/div[1]/h1"
+      },
+      "text": "${autocomplete}"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
       }
     },
     {
-      "type": "verifyTextPresent",
-      "text": "${autocomplete}"
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-search-api-views-fulltext']"
+      }
+    },
+    {
+      "type": "storeElementValue",
+      "locator": {
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
+      },
+      "variable": "placeholdertekst"
+    },
+    {
+      "type": "print",
+      "text": "${placeholdertekst}"
+    },
+    {
+      "type": "verifyElementValue",
+      "negated": true,
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-search-api-views-fulltext']"
+      },
+      "value": ""
     }
   ],
   "data": {
