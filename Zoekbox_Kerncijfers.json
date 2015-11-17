@@ -43,27 +43,65 @@
       }
     },
     {
+      "type": "print",
+      "text": "CONTROLEER TITEL"
+    },
+    {
       "type": "verifyTextPresent",
       "text": "Overzicht Kerncijfers"
     },
     {
-      "type": "verifyTextPresent",
-      "text": "resultaten"
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div[1]/h1"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKBOX ELEMENT, ZOEKBOXTEKST"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/div/div[2]/div[2]/div[1]/section/form/div/div/div/div[1]/div/div/input[1]"
+      }
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
+      },
+      "value": "${autocomplete}"
     },
     {
       "type": "print",
       "text": "RESULTATEN OVERZICHT"
     },
     {
+      "type": "print",
+      "text": "CONTROLEER #RESULTATEN, RESULTATEN LIJST"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "resultaten"
+    },
+    {
+      "type": "storeElementValue",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='content']//b[.='Kerncijfers']"
+      },
+      "variable": "resultaat"
+    },
+    {
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='content']/div[3]/div[2]/ul"
+        "value": "//div[@id='content']/div[3]/div[2]/ol/li[1]"
       }
-    },
-    {
-      "type": "print",
-      "text": "CONTROLEER RESULTAAT AANWEZIG"
     },
     {
       "type": "verifyText",
@@ -80,13 +118,13 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div/div/div[2]/div[2]/div[3]/div[2]/ul/li[1]/h2/a"
+        "type": "link text",
+        "value": "${autocomplete}"
       }
     },
     {
       "type": "print",
-      "text": "KERNCIJFER DETAIL PAGINA"
+      "text": "KERNCIJFER DETAIL PAGINA MET H1 EN TEKST"
     },
     {
       "type": "verifyElementPresent",
