@@ -169,6 +169,10 @@
       "text": "${placeholdertekst}"
     },
     {
+      "type": "print",
+      "text": "PLACEHOLDER ZOEKBOX HEEFT INHOUD:"
+    },
+    {
       "type": "verifyElementValue",
       "negated": true,
       "locator": {
