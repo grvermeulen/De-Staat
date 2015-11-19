@@ -4,8 +4,11 @@
   "formatVersion": 2,
   "steps": [
     {
-      "type": "get",
-      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
     },
     {
       "type": "print",
@@ -30,18 +33,6 @@
     {
       "type": "print",
       "text": "Mijn zoekterm is ${autocomplete}"
-    },
-    {
-      "type": "setElementText",
-      "locator": {
-        "type": "xpath",
-        "value": "//input[@id='edit-search-api-views-fulltext']"
-      },
-      "text": "${autocomplete}"
-    },
-    {
-      "type": "waitForTextPresent",
-      "text": "${autocomplete}"
     },
     {
       "type": "clickElement",
