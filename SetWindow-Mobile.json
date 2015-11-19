@@ -4,8 +4,8 @@
   "formatVersion": 2,
   "steps": [
     {
-      "type": "get",
-      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+      "type": "print",
+      "text": "SET WINDOW MOBILE + BACKGROUND CHECK"
     },
     {
       "type": "setWindowSize",
@@ -14,6 +14,16 @@
     },
     {
       "type": "refresh"
+    },
+    {
+      "type": "verifyElementStyle",
+      "negated": true,
+      "locator": {
+        "type": "id",
+        "value": "main"
+      },
+      "propertyName": "background-image",
+      "value": "url(\"http://webcmsl02-ext-t.rivm.nl/staat/sites/default/files/achtergrond.jpg\")"
     }
   ],
   "data": {
