@@ -5,6 +5,10 @@
   "scripts": [
     {
       "where": "github",
+      "path": "OmgevingSelecteren.json"
+    },
+    {
+      "where": "github",
       "path": "SetWindow-Desktop.json"
     },
     {
