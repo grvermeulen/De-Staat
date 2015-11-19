@@ -16,13 +16,21 @@
       "type": "refresh"
     },
     {
+      "type": "storeCurrentUrl",
+      "variable": "url"
+    },
+    {
+      "type": "print",
+      "text": "${url}"
+    },
+    {
       "type": "verifyElementStyle",
       "locator": {
         "type": "id",
         "value": "main"
       },
       "propertyName": "background-image",
-      "value": "url(\"http://webcmsl02-ext-t.rivm.nl/staat/sites/default/files/achtergrond.jpg\")"
+      "value": "${url}url(\"/sites/default/files/achtergrond.jpg\")"
     }
   ],
   "data": {
