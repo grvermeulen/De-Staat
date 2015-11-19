@@ -4,6 +4,10 @@
   "formatVersion": 2,
   "steps": [
     {
+      "type": "print",
+      "text": "SCHERMGROOTTE DESKTOP + ACHTERGRONDCHECK"
+    },
+    {
       "type": "setWindowSize",
       "width": "1024",
       "height": "1080"
