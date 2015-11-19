@@ -1,0 +1,29 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "storeElementValue",
+      "locator": {
+        "type": "id",
+        "value": "edit-search-api-views-fulltext"
+      },
+      "variable": "omgeving"
+    },
+    {
+      "type": "print",
+      "text": "${omgeving}"
+    },
+    {
+      "type": "get",
+      "url": "${omgeving}"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
