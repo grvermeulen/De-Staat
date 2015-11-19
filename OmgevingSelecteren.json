@@ -17,7 +17,7 @@
     },
     {
       "type": "get",
-      "url": "${omgeving}"
+      "url": "http://webcmsl02-ext-${omgeving}.rivm.nl/staat/"
     }
   ],
   "data": {
