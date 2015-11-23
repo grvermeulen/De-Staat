@@ -5,7 +5,7 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+      "url": "http://webcmsl02-ext-a.rivm.nl/staat/"
     },
     {
       "type": "storeElementValue",
@@ -21,7 +21,7 @@
     },
     {
       "type": "get",
-      "url": "http://webcmsl02-ext-t.rivm.nl/staat/"
+      "url": "http://webcmsl02-ext-a.rivm.nl/staat/"
     }
   ],
   "data": {
