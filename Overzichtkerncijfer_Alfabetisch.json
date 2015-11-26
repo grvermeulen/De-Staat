@@ -4,10 +4,6 @@
   "formatVersion": 2,
   "steps": [
     {
-      "type": "get",
-      "url": "http://webcmsl02-ext-a.rivm.nl/staat/kerncijfers/b"
-    },
-    {
       "type": "clickElement",
       "locator": {
         "type": "css selector",
