@@ -41,6 +41,18 @@
     },
     {
       "where": "github",
+      "path": "Overzichtkerncijfer_Alfabetisch.json"
+    },
+    {
+      "where": "github",
+      "path": "Overzichtkerncijfers_Thematisch.json"
+    },
+    {
+      "where": "github",
+      "path": "Overzichtkerncijfers_Levensfase.json"
+    },
+    {
+      "where": "github",
       "path": "SetWindow-Mobile.json"
     },
     {
@@ -73,6 +85,10 @@
     },
     {
       "where": "github",
+      "path": "Overzichtkerncijfers-Mobiel.json"
+    },
+    {
+      "where": "github",
       "path": "SetWindow-Tablet.json"
     },
     {
@@ -102,6 +118,18 @@
     {
       "where": "github",
       "path": "Footer.json"
+    },
+    {
+      "where": "github",
+      "path": "Overzichtkerncijfer_Alfabetisch.json"
+    },
+    {
+      "where": "github",
+      "path": "Overzichtkerncijfers_Levensfase.json"
+    },
+    {
+      "where": "github",
+      "path": "Overzichtkerncijfers_Thematisch.json"
     }
   ],
   "shareState": false
