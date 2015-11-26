@@ -1,0 +1,103 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-a.rivm.nl/staat/kerncijfers/b"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']//p[.='Kerncijfers van A-Z']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Klik op de x (deze is niet beschikbaar)"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='alphabet-index']//span[.='X']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Klik op de letter A"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='alphabet-index']//a[.='A']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='alphabet-index']//a[.='A']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Letter A is aanwezig"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//h3[@id='index_a']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "H3 header van letter is aanwezig"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "div.alphabet-item"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='alphabet-index']//a[.='D']"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//h3[@id='index_c']"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//h3[@id='index_e']"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
