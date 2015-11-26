@@ -93,7 +93,7 @@
         "type": "xpath",
         "value": "//div[@id='content']/div[2]/div[2]/ol/li[1]"
       },
-      "variable": "resultaat"
+      "variable": "${autocomplete}"
     },
     {
       "type": "verifyElementPresent",
