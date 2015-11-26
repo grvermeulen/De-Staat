@@ -1,0 +1,97 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Blok Ingang thema"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//section[@id='block-views-ds-home-blokken-blck-homeblock']/div/div/a[2]"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Tab staat als actief:"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "li.active > a.active"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Hele blok van de term is aanwezig: "
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Header van Term"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/header/h2"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Link naar kerncijfers onder de term: \" Bekijk alle kerncijfers\\\" "
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/header/h2"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Description text"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/p[1]"
+      }
+    },
+    {
+      "type": "print",
+      "text": "Afbeelding van de Term"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/div/img"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
