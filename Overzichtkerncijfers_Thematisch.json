@@ -40,7 +40,7 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article"
+        "value": "//div[@id='content']/div[2]/div/ul/li[1]/a/article"
       }
     },
     {
@@ -51,7 +51,7 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/header/h2"
+        "value": "//div[@id='content']/div[2]/div/ul/li[1]/a/article/header/h2"
       }
     },
     {
@@ -73,7 +73,7 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/p[4]"
+        "value": "//div[@id='content']/div[2]/div/ul/li[1]/a/article/p[2]"
       }
     },
     {
@@ -84,7 +84,7 @@
       "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
-        "value": "//div[@id='system-main']/div/div/ul/li[3]/a/article/div/img"
+        "value": "//div[@id='content']/div[2]/div/ul/li[1]/a/article/div/img"
       }
     }
   ],
