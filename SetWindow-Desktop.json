@@ -30,7 +30,7 @@
         "value": "main"
       },
       "propertyName": "background-image",
-      "value": "${url}url(\"/sites/default/files/achtergrond.jpg\")"
+      "value": "url(\"${url}sites/default/files/achtergrond.jpg\")"
     }
   ],
   "data": {
