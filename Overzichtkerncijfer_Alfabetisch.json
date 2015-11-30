@@ -88,6 +88,44 @@
         "type": "xpath",
         "value": "//h3[@id='index_e']"
       }
+    },
+    {
+      "type": "print",
+      "text": "Knop terug naar boven: "
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//a[@class='gototop']"
+      }
+    },
+    {
+      "type": "verifyElementStyle",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='content']/ol"
+      },
+      "propertyName": "color",
+      "value": "rgba(66,20,95,1)"
+    },
+    {
+      "type": "verifyElementStyle",
+      "locator": {
+        "type": "css selector",
+        "value": "div.alphabet-item"
+      },
+      "propertyName": "color",
+      "value": "rgba(0,0,0,1)"
+    },
+    {
+      "type": "verifyElementStyle",
+      "locator": {
+        "type": "css selector",
+        "value": "div.alphabet-item"
+      },
+      "propertyName": "background-color",
+      "value": "rgba(227,220,231,1)"
     }
   ],
   "data": {
@@ -95,5 +133,5 @@
     "source": "none"
   },
   "inputs": [],
-  "timeoutSeconds": 60
+  "timeoutSeconds": 2
 }
