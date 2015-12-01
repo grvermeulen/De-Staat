@@ -161,7 +161,7 @@
     },
     {
       "type": "print",
-      "text": "PLACEHOLDER ZOEKBOX HEEFT INHOUD:"
+      "text": "PLACEHOLDER KERNCIJFER ZOEKBOX ZOEKBOX HEEFT GEEN TEKST:"
     },
     {
       "type": "verifyElementValue",
