@@ -185,6 +185,10 @@
       "text": "http://opendata.cbs.nl/ODataApi/odata/81174NED/TypedDataSet?$select=Perioden,Geslacht,%20ZeerGoedGoed_1&$filter=Leeftijd%20eq%20%2710000%27%20and%20Cijfersoort%20eq%20%271%27"
     },
     {
+      "type": "print",
+      "text": "TRANSFORMEER DATA"
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
@@ -197,6 +201,10 @@
         "type": "xpath",
         "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[2]/div/div[2]/div/div[1]/div[3]/input"
       }
+    },
+    {
+      "type": "print",
+      "text": ""
     },
     {
       "type": "print",
