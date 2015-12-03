@@ -1,0 +1,245 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://webcmsl02-ext-o.rivm.nl/staat/user"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-name"
+      },
+      "text": "admin"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-pass"
+      },
+      "text": "admin"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "id",
+        "value": "admin-menu-wrapper"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable > a"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "id",
+        "value": "admin-menu-wrapper"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//body"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable > a"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "Inhoud toevoegen"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "Grafiek"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Grafiek"
+      }
+    },
+    {
+      "type": "switchToFrameByIndex",
+      "index": "1"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[1]/input"
+      },
+      "text": "Grafiek 1 met transformatie"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[2]/div/div/input"
+      },
+      "text": "Grafriek 1 redacatie titel"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[1]/div/div[1]/div/div/input"
+      },
+      "text": "Subtitel grafiek"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[1]/div/div[2]/div/div/div[1]/div/textarea"
+      },
+      "text": "Handmatig ingevulde bron"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[1]/div/div[3]/div/div/div[1]/div/textarea"
+      },
+      "text": "Toelichting grafiek"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/ul/li[6]/a/strong"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//label[@for='edit-status']"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/fieldset[6]/div/div[1]/input"
+      }
+    },
+    {
+      "type": "print",
+      "text": "TAB DATASET"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[2]/a/strong"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@class='form-text']"
+      },
+      "text": "http://opendata.cbs.nl/ODataApi/odata/81174NED/TypedDataSet?$select=Perioden,Geslacht,%20ZeerGoedGoed_1&$filter=Leeftijd%20eq%20%2710000%27%20and%20Cijfersoort%20eq%20%271%27"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//label[@for='edit-field-transform-data-und-ja']"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[2]/div/div[2]/div/div[1]/div[3]/input"
+      }
+    },
+    {
+      "type": "print",
+      "text": "TAB WEERGAVE OPTIES"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[3]/a/strong"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[3]/div/fieldset[2]/div/div[1]/div/div/input"
+      },
+      "text": "label y - as"
+    },
+    {
+      "type": "print",
+      "text": "TAB GEAVANCEERDE OPTIES"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[4]/a/strong"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@class='form-submit']"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
