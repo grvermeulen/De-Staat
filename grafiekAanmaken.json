@@ -5,10 +5,6 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://webcmsl02-ext-o.rivm.nl/staat/"
-    },
-    {
-      "type": "get",
       "url": "http://webcmsl02-ext-o.rivm.nl/staat/user"
     },
     {
@@ -106,18 +102,7 @@
     },
     {
       "type": "switchToFrameByIndex",
-      "index": "2"
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "id",
-        "value": ""
-      }
-    },
-    {
-      "type": "switchToFrame",
-      "identifier": ""
+      "index": "1"
     },
     {
       "type": "setElementText",
@@ -181,6 +166,10 @@
       }
     },
     {
+      "type": "print",
+      "text": "TAB DATASET"
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
@@ -210,6 +199,10 @@
       }
     },
     {
+      "type": "print",
+      "text": "TAB WEERGAVE OPTIES"
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
@@ -222,15 +215,11 @@
         "type": "xpath",
         "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[3]/div/fieldset[2]/div/div[1]/div/div/input"
       },
-      "text": "label y -a as"
+      "text": "label y - as"
     },
     {
-      "type": "setElementText",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[3]/div/fieldset[2]/div/div[1]/div/div/input"
-      },
-      "text": "label y - as"
+      "type": "print",
+      "text": "TAB GEAVANCEERDE OPTIES"
     },
     {
       "type": "clickElement",
