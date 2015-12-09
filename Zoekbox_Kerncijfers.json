@@ -18,7 +18,7 @@
       "type": "setElementText",
       "locator": {
         "type": "xpath",
-        "value": "//input[@id='edit-search-api-views-fulltext']"
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "text": "Kerncijfers voor beleid"
     },
@@ -26,7 +26,7 @@
       "type": "storeElementValue",
       "locator": {
         "type": "xpath",
-        "value": "//input[@id='edit-search-api-views-fulltext']"
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "variable": "autocomplete"
     },
@@ -105,8 +105,8 @@
     {
       "type": "verifyText",
       "locator": {
-        "type": "id",
-        "value": "edit-search-api-views-fulltext"
+        "type": "xpath",
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "text": "${autocomplete)"
     },
@@ -144,14 +144,14 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//input[@id='edit-search-api-views-fulltext']"
+        "value": "//input[@id='edit-searchkeyfigures']"
       }
     },
     {
       "type": "storeElementValue",
       "locator": {
-        "type": "id",
-        "value": "edit-search-api-views-fulltext"
+        "type": "xpath",
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "variable": "placeholdertekst"
     },
@@ -168,7 +168,7 @@
       "negated": true,
       "locator": {
         "type": "xpath",
-        "value": "//input[@id='edit-search-api-views-fulltext']"
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "value": ""
     }
