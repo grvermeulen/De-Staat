@@ -171,6 +171,216 @@
         "value": "//input[@id='edit-searchkeyfigures']"
       },
       "value": ""
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP TITEL"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP VERANTWOORDING"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": "Het CBS verzamelt zelfgerapporteerde gegevens"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP BODYTEKST"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": "Bodytekst: Dit is het inleidende tekstje waarin"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP KERNCIJFER"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": " 328155"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP KERNZIN"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": ""
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP BRON"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": "CBS / Monitor Langdurige Zorg"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
+    },
+    {
+      "type": "print",
+      "text": "ZOEKEN OP PEILDATUM"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-searchkeyfigures"
+      },
+      "text": "2014"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='edit-submit-ds-kernvragen-search']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "zorg met verblijf - voorbeeldkerncijfer"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.logotype"
+      }
     }
   ],
   "data": {
