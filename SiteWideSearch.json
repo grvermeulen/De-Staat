@@ -111,7 +111,7 @@
       "type": "sendKeysToElement",
       "locator": {
         "type": "xpath",
-        "value": "//input[@id='edit-zoek']"
+        "value": "//input[@id='edit-search']"
       },
       "text": "laskjdflk"
     },
