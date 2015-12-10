@@ -63,15 +63,15 @@
     {
       "type": "verifyElementPresent",
       "locator": {
-        "type": "id",
-        "value": "edit-search-api-views-fulltext"
+        "type": "xpath",
+        "value": "//input[@id='edit-searchkeyfigures']"
       }
     },
     {
       "type": "verifyElementValue",
       "locator": {
-        "type": "id",
-        "value": "edit-search-api-views-fulltext"
+        "type": "xpath",
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "value": "${autocomplete}"
     },
