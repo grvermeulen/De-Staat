@@ -22,8 +22,8 @@
     {
       "type": "storeElementValue",
       "locator": {
-        "type": "id",
-        "value": "edit-search-api-views-fulltext"
+        "type": "xpath",
+        "value": "//input[@id='edit-searchkeyfigures']"
       },
       "variable": "omgeving"
     },
