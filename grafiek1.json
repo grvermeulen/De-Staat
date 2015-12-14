@@ -5,7 +5,7 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://webcmsl02-ext-o.rivm.nl/staat/user"
+      "url": "http://localhost:8080"
     },
     {
       "type": "setElementText",
