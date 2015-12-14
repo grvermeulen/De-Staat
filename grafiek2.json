@@ -106,7 +106,7 @@
     },
     {
       "type": "print",
-      "text": "Titel Menu Tab"
+      "text": "Trends testtab 1"
     },
     {
       "type": "setElementText",
@@ -126,7 +126,7 @@
         "type": "css selector",
         "value": "#edit-title"
       },
-      "text": "CSV test naar geslacht"
+      "text": "Zware rokers naar leeftijd en geslacht"
     },
     {
       "type": "print",
@@ -138,7 +138,7 @@
         "type": "id",
         "value": "edit-field-descriptive-title-und-0-value"
       },
-      "text": "eventueel een redactionele titel"
+      "text": "Zware rokers actueel naar leeftijd en geslacht 2013"
     },
     {
       "type": "print",
@@ -185,11 +185,18 @@
         "type": "xpath",
         "value": "//input[@class='form-text']"
       },
-      "text": ""
+      "text": "http://opendata.cbs.nl/ODataApi/odata/81175ned/TypedDataSet?$select=Geslacht,Leeftijd,ZwareRokersOnderBevolking_2&$filter=Perioden%20eq%20%272013JJ00%27%20and%20Cijfersoort%20eq%20%271%27"
     },
     {
       "type": "print",
       "text": "TRANSFORMEER DATA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-transform-data-und-ja"
+      }
     },
     {
       "type": "clickElement",
@@ -225,7 +232,7 @@
       "text": "KIES GRAFIEK TYPE"
     },
     {
-      "type": "setElementNotSelected",
+      "type": "setElementSelected",
       "locator": {
         "type": "id",
         "value": "edit-field-graph-type-und-column"
@@ -239,7 +246,7 @@
       }
     },
     {
-      "type": "setElementSelected",
+      "type": "setElementNotSelected",
       "locator": {
         "type": "id",
         "value": "edit-field-graph-type-und-line"
@@ -264,14 +271,14 @@
       "text": "STAPELING"
     },
     {
-      "type": "setElementNotSelected",
+      "type": "setElementSelected",
       "locator": {
         "type": "xpath",
         "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[1]"
       }
     },
     {
-      "type": "setElementSelected",
+      "type": "setElementNotSelected",
       "locator": {
         "type": "xpath",
         "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[2]"
@@ -314,7 +321,7 @@
       "type": "setElementSelected",
       "locator": {
         "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[4]/div/select//option[1]"
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[4]/div/select//option[3]"
       }
     },
     {
@@ -339,7 +346,19 @@
         "type": "id",
         "value": "edit-field-graph-y-axis-title-und-0-value"
       },
-      "text": "Testlabel y -as "
+      "text": "%"
+    },
+    {
+      "type": "print",
+      "text": "TICK INTERVAL"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-y-axis-tick-int-und-0-value"
+      },
+      "text": "1"
     },
     {
       "type": "print",
@@ -362,7 +381,7 @@
         "type": "id",
         "value": "edit-field-graph-sources-und-0-value"
       },
-      "text": "en een bron(nen)"
+      "text": "CBS / Leefstijlmonitor"
     },
     {
       "type": "setElementText",
