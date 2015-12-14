@@ -105,28 +105,249 @@
       "index": "1"
     },
     {
+      "type": "print",
+      "text": "KERNCIJFER TITEL"
+    },
+    {
       "type": "setElementText",
       "locator": {
         "type": "id",
         "value": "edit-title"
       },
-      "text": "Kerncijfer voorbeeld titel"
+      "text": "Zorg met verblijf - Voorbeeldkerncijfer aanpast 1"
+    },
+    {
+      "type": "print",
+      "text": "KERNCIJFER BODYTEKST"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "wysiwyg-toggle-edit-body-und-0-value"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-body-und-0-value"
+      },
+      "text": "Voobeeld bodtekst"
+    },
+    {
+      "type": "print",
+      "text": "VERANTWOORDING"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "wysiwyg-toggle-edit-field-verantwoording-und-0-value"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-verantwoording-und-0-value"
+      },
+      "text": "verantwoording grijze blok onderaan: Het CBS verzamelt zelfgerapporteerde gegevens. Het CBS vraagt deze gegevens jaarlijks na bij een steekproef uit de Nederlandse bevolking (POLS, gezondheid en welzijn). Circa tienduizend Nederlanders van 12 jaar en ouder rapporteren onder meer of zij een hoge bloeddruk hebben en/of bloeddrukverlagende medicijnen gebruiken. Om een representatief beeld te krijgen van deze bevolkingsgroep zijn de resultaten van dit onderzoek herwogen naar de volgende vijf factoren: geslacht, leeftijd, burgerlijke staat en een combinatie van regio en urbanisatiegraad."
+    },
+    {
+      "type": "print",
+      "text": "ACTUELE CIJFERS GRAFIEK"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-actuele-cijfers-und-0-target-id"
+      },
+      "text": "Indicatie met zorg naar erblijf"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-actuele-cijfers-und-add-more"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-actuele-cijfers-und-0-target-id"
+      },
+      "text": "CSV test naar geslacht "
+    },
+    {
+      "type": "print",
+      "text": "TREND GRAFIEK"
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "xpath",
-        "value": "//html"
+        "value": "//div[@class='form-item']/div[1]/table[2]/tbody/tr/td[2]/div/input[1]"
       },
-      "text": "Kerncijfer voorbeeld Bodytext"
+      "text": "CSV test naar geslacht "
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "edit-field-trends-und-add-more"
+      }
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "xpath",
-        "value": "//p"
+        "value": "//div[@class='form-item']/div[1]/table[2]/tbody/tr/td[2]/div/input[1]"
       },
-      "text": "Kerncijfer voorbeeld verantwoording"
+      "text": "Zware rokers trend "
+    },
+    {
+      "type": "print",
+      "text": "REGIONAAL/INTERNATIONAAL"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-actuele-cijfers-und-0-target-id"
+      },
+      "text": "CSV test naar geslacht "
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-regionaal-internationaal-und-add-more"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-actuele-cijfers-und-0-target-id"
+      },
+      "text": "CSV test naar geslacht "
+    },
+    {
+      "type": "print",
+      "text": "TAB GEGEVENS"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/ul/li[2]/a/strong"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-kerncijfer-odata-url-und-0-value"
+      },
+      "text": "http://opendata.cbs.nl/ODataApi/OData/81449NED/TypedDataSet?$filter=IndicatieZMV%20eq%20%2799999%27%20and%20Geslacht%20eq%20%271100%27%20and%20Leeftijd%20eq%20%2710000%27%20and%20GebruikZMV%20eq%20%2799999%27%20and%20Persoonskenmerken%20eq%20%2710000%27%20and%20Perioden%20eq%20%272014JJ00%27&$select=PersMetIndicatieGebruikOpPeildatum_3"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-eenheid-und-0-value"
+      },
+      "text": "personen"
+    },
+    {
+      "type": "print",
+      "text": "TAB METADATA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/ul/li[3]/a/strong"
+      }
+    },
+    {
+      "type": "print",
+      "text": "kernzin"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-kernzin-und-0-value"
+      },
+      "text": "Dit een voorbeeld van een kernzin "
+    },
+    {
+      "type": "print",
+      "text": "bron"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-bron-und-0-value"
+      },
+      "text": "http://www.cbs.nl"
+    },
+    {
+      "type": "print",
+      "text": "peildatum"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-peildatum-und-0-value"
+      },
+      "text": ""
+    },
+    {
+      "type": "print",
+      "text": "TAB TAXONOMIEEN"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/ul/li[4]/a/strong"
+      }
+    },
+    {
+      "type": "print",
+      "text": "PUBLICEREN"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[5]/ul/li[5]/a/strong"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-status"
+      }
+    },
+    {
+      "type": "print",
+      "text": "OPSLAAN"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit"
+      }
     }
   ],
   "data": {
