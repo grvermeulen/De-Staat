@@ -106,7 +106,7 @@
     },
     {
       "type": "print",
-      "text": "Trends testtab 1"
+      "text": "Titel Menu Tab"
     },
     {
       "type": "setElementText",
@@ -114,7 +114,7 @@
         "type": "id",
         "value": "edit-field-menu-tab-title-und-0-title-override"
       },
-      "text": "Naar geslacht testtab 2"
+      "text": "test tab 2"
     },
     {
       "type": "print",
@@ -126,7 +126,7 @@
         "type": "css selector",
         "value": "#edit-title"
       },
-      "text": "Zware rokers naar leeftijd en geslacht"
+      "text": "CSV test naar geslacht"
     },
     {
       "type": "print",
@@ -138,7 +138,7 @@
         "type": "id",
         "value": "edit-field-descriptive-title-und-0-value"
       },
-      "text": "Zware rokers actueel naar leeftijd en geslacht 2013"
+      "text": "eventueel een redactionele titel"
     },
     {
       "type": "print",
@@ -185,7 +185,7 @@
         "type": "xpath",
         "value": "//input[@class='form-text']"
       },
-      "text": "http://opendata.cbs.nl/ODataApi/odata/81175ned/TypedDataSet?$select=Geslacht,Leeftijd,ZwareRokersOnderBevolking_2&$filter=Perioden%20eq%20%272013JJ00%27%20and%20Cijfersoort%20eq%20%271%27"
+      "text": ""
     },
     {
       "type": "print",
@@ -232,7 +232,7 @@
       "text": "KIES GRAFIEK TYPE"
     },
     {
-      "type": "setElementSelected",
+      "type": "setElementNotSelected",
       "locator": {
         "type": "id",
         "value": "edit-field-graph-type-und-column"
@@ -246,7 +246,7 @@
       }
     },
     {
-      "type": "setElementNotSelected",
+      "type": "setElementSelected",
       "locator": {
         "type": "id",
         "value": "edit-field-graph-type-und-line"
