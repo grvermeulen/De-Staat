@@ -260,13 +260,6 @@
       }
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "id",
-        "value": "edit-field-graph-stacking-und"
-      }
-    },
-    {
       "type": "print",
       "text": "STAPELING"
     },
