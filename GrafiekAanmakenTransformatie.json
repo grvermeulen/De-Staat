@@ -126,7 +126,7 @@
         "type": "css selector",
         "value": "#edit-title"
       },
-      "text": "Grafiek 1 met transformatie"
+      "text": "Grafiek 1 met transformatie test"
     },
     {
       "type": "print",
@@ -188,27 +188,6 @@
       "text": "http://opendata.cbs.nl/ODataApi/odata/81174NED/TypedDataSet?$select=Perioden,Geslacht,%20ZeerGoedGoed_1&$filter=Leeftijd%20eq%20%2710000%27%20and%20Cijfersoort%20eq%20%271%27"
     },
     {
-      "type": "setElementSelected",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/fieldset[6]/div/div[1]/input"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//label[@for='edit-status']"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[2]/a/strong"
-      }
-    },
-    {
       "type": "print",
       "text": "TRANSFORMEER DATA"
     },
@@ -220,15 +199,22 @@
       }
     },
     {
-      "type": "setElementSelected",
+      "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[2]/div/div[2]/div/div[1]/div[3]/input"
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[5]/ul/li[6]/a/strong"
       }
     },
     {
       "type": "print",
-      "text": ""
+      "text": "PUBLICEREN: JA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//label[@for='edit-status']"
+      }
     },
     {
       "type": "print",
@@ -237,15 +223,128 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[3]/a/strong"
+        "type": "link text",
+        "value": "Weergave opties"
       }
+    },
+    {
+      "type": "print",
+      "text": "KIES GRAFIEK TYPE"
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-column"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-bar"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-line"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-pie"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-stacking-und"
+      }
+    },
+    {
+      "type": "print",
+      "text": "STAPELING"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[1]"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[2]"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[3]"
+      }
+    },
+    {
+      "type": "print",
+      "text": "MARKERINGEN"
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-show-line-markers-und"
+      }
+    },
+    {
+      "type": "print",
+      "text": "KLEURENPALET"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-colors-und"
+      }
+    },
+    {
+      "type": "print",
+      "text": "KIES KLEURENPALET: KIES OPTION [1] T/M 14"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[4]/div/select//option[1]"
+      }
+    },
+    {
+      "type": "print",
+      "text": "LABEL VOOR X AS "
     },
     {
       "type": "setElementText",
       "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[3]/div/fieldset[2]/div/div[1]/div/div/input"
+        "type": "id",
+        "value": "edit-field-graph-x-axis-title-und-0-value"
+      },
+      "text": "Label x -as"
+    },
+    {
+      "type": "print",
+      "text": "LABEL VOOR Y AS "
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-y-axis-title-und-0-value"
       },
       "text": "label y - as"
     },
@@ -254,11 +353,55 @@
       "text": "TAB GEAVANCEERDE OPTIES"
     },
     {
+      "type": "print",
+      "text": "TAB METADATA"
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[4]/a/strong"
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/ul/li[5]/a/strong"
       }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-sources-und-0-value"
+      },
+      "text": "BRONNEN"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-source-und-0-value"
+      },
+      "text": "BRON"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[5]/div/div[3]/div/div/div/div/textarea"
+      },
+      "text": "KERNBOODSCHAP"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-more-info-und-0-value"
+      },
+      "text": "http://www.voorbeeldurl.nl"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-more-info-und-0-title"
+      },
+      "text": "url titel"
     },
     {
       "type": "clickElement",
