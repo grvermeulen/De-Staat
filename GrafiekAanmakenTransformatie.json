@@ -105,50 +105,93 @@
       "index": "1"
     },
     {
+      "type": "print",
+      "text": "Titel Menu Tab"
+    },
+    {
       "type": "setElementText",
       "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[1]/input"
+        "type": "id",
+        "value": "edit-field-menu-tab-title-und-0-title-override"
+      },
+      "text": "Titel menu tab"
+    },
+    {
+      "type": "print",
+      "text": "Titel Grafiek"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "css selector",
+        "value": "#edit-title"
       },
       "text": "Grafiek 1 met transformatie"
     },
     {
-      "type": "setElementText",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[2]/div/div/input"
-      },
-      "text": "Grafriek 1 redacatie titel"
+      "type": "print",
+      "text": "Redactionele titel"
     },
     {
       "type": "setElementText",
       "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[1]/div/div[1]/div/div/input"
+        "type": "id",
+        "value": "edit-field-descriptive-title-und-0-value"
       },
+      "text": "Grafriek 1 redacatie titel"
+    },
+    {
+      "type": "print",
       "text": "Subtitel grafiek"
     },
     {
       "type": "setElementText",
       "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[1]/div/div[2]/div/div/div[1]/div/textarea"
+        "type": "id",
+        "value": "edit-field-graph-subtitle-und-0-value"
       },
-      "text": "Handmatig ingevulde bron"
+      "text": "Subtitel grafiek"
+    },
+    {
+      "type": "print",
+      "text": "Toelichting"
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/div/fieldset[1]/div/div[3]/div/div/div[1]/div/textarea"
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[1]/div/div[2]/div/div/div[1]/div/textarea"
       },
-      "text": "Toelichting grafiek"
+      "text": "Toelichting *"
+    },
+    {
+      "type": "print",
+      "text": "TAB DATASET"
     },
     {
       "type": "clickElement",
       "locator": {
+        "type": "link text",
+        "value": "Dataset"
+      }
+    },
+    {
+      "type": "print",
+      "text": "oData URL"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
         "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/ul/li[6]/a/strong"
+        "value": "//input[@class='form-text']"
+      },
+      "text": "http://opendata.cbs.nl/ODataApi/odata/81174NED/TypedDataSet?$select=Perioden,Geslacht,%20ZeerGoedGoed_1&$filter=Leeftijd%20eq%20%2710000%27%20and%20Cijfersoort%20eq%20%271%27"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/fieldset[6]/div/div[1]/input"
       }
     },
     {
@@ -159,30 +202,11 @@
       }
     },
     {
-      "type": "setElementSelected",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/fieldset[6]/div/div[1]/input"
-      }
-    },
-    {
-      "type": "print",
-      "text": "TAB DATASET"
-    },
-    {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
         "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[3]/div/ul/li[2]/a/strong"
       }
-    },
-    {
-      "type": "setElementText",
-      "locator": {
-        "type": "xpath",
-        "value": "//input[@class='form-text']"
-      },
-      "text": "http://opendata.cbs.nl/ODataApi/odata/81174NED/TypedDataSet?$select=Perioden,Geslacht,%20ZeerGoedGoed_1&$filter=Leeftijd%20eq%20%2710000%27%20and%20Cijfersoort%20eq%20%271%27"
     },
     {
       "type": "print",
