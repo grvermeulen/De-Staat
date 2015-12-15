@@ -13,15 +13,8 @@
     {
       "type": "verifyElementPresent",
       "locator": {
-        "type": "xpath",
-        "value": "//section[@id='block-views-da3567f1e8bca9f871c7f3a33037ec7e']/div"
-      }
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//div/div/div[2]/div/section[3]/div/div/ul/li/h2/a"
+        "type": "css selector",
+        "value": "a.direct-to-link"
       }
     },
     {
