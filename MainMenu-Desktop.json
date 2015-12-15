@@ -88,13 +88,6 @@
       }
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//div/div/div[1]/nav/ul/li[3]/a"
-      }
-    },
-    {
       "type": "verifyElementPresent",
       "locator": {
         "type": "css selector",
