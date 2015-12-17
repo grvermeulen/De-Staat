@@ -1,24 +1,417 @@
 {
-  "type": "suite",
+  "type": "script",
   "seleniumVersion": "2",
-  "formatVersion": 1,
-  "scripts": [
+  "formatVersion": 2,
+  "steps": [
     {
-      "where": "github",
-      "path": "grafiek1.json"
+      "type": "get",
+      "url": "http://webcmsl02-ext-o.rivm.nl/staat/user"
     },
     {
-      "where": "github",
-      "path": "grafiek2.json"
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-name"
+      },
+      "text": "admin"
     },
     {
-      "where": "github",
-      "path": "Grafiek3.json"
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-pass"
+      },
+      "text": "admin"
     },
     {
-      "where": "github",
-      "path": "Kerncijfer aanmaken.json"
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "id",
+        "value": "admin-menu-wrapper"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable > a"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "id",
+        "value": "admin-menu-wrapper"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//body"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable > a"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#admin-menu-menu > li.admin-menu-toolbar-category.expandable"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "Inhoud toevoegen"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "Grafiek"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Grafiek"
+      }
+    },
+    {
+      "type": "switchToFrameByIndex",
+      "index": "1"
+    },
+    {
+      "type": "print",
+      "text": "Titel Menu Tab"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-menu-tab-title-und-0-title-override"
+      },
+      "text": "test tab 2"
+    },
+    {
+      "type": "print",
+      "text": "Titel Grafiek"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "css selector",
+        "value": "#edit-title"
+      },
+      "text": "CSV test naar geslacht"
+    },
+    {
+      "type": "print",
+      "text": "Redactionele titel"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-descriptive-title-und-0-value"
+      },
+      "text": "eventueel een redactionele titel"
+    },
+    {
+      "type": "print",
+      "text": "Subtitel grafiek"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-subtitle-und-0-value"
+      },
+      "text": "eventueel een subtitel"
+    },
+    {
+      "type": "print",
+      "text": "Toelichting"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[1]/div/div[2]/div/div/div[1]/div/textarea"
+      },
+      "text": "toelichting: sterretje"
+    },
+    {
+      "type": "print",
+      "text": "TAB DATASET"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Dataset"
+      }
+    },
+    {
+      "type": "print",
+      "text": "oData URL"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@class='form-text']"
+      },
+      "text": ""
+    },
+    {
+      "type": "print",
+      "text": "TRANSFORMEER DATA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-transform-data-und-ja"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[5]/ul/li[6]/a/strong"
+      }
+    },
+    {
+      "type": "print",
+      "text": "PUBLICEREN: JA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//label[@for='edit-status']"
+      }
+    },
+    {
+      "type": "print",
+      "text": "TAB WEERGAVE OPTIES"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Weergave opties"
+      }
+    },
+    {
+      "type": "print",
+      "text": "KIES GRAFIEK TYPE"
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-column"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-bar"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-line"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-type-und-pie"
+      }
+    },
+    {
+      "type": "print",
+      "text": "STAPELING"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[1]"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[2]"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[2]/div/select//option[3]"
+      }
+    },
+    {
+      "type": "print",
+      "text": "MARKERINGEN"
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-show-line-markers-und"
+      }
+    },
+    {
+      "type": "print",
+      "text": "KLEURENPALET"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-colors-und"
+      }
+    },
+    {
+      "type": "print",
+      "text": "KIES KLEURENPALET: KIES OPTION [1] T/M 14"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[3]/div/div[4]/div/select//option[3]"
+      }
+    },
+    {
+      "type": "print",
+      "text": "LABEL VOOR X AS "
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-x-axis-title-und-0-value"
+      },
+      "text": "Label x -as"
+    },
+    {
+      "type": "print",
+      "text": "LABEL VOOR Y AS "
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-y-axis-title-und-0-value"
+      },
+      "text": "%"
+    },
+    {
+      "type": "print",
+      "text": "TICK INTERVAL"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-y-axis-tick-int-und-0-value"
+      },
+      "text": "1"
+    },
+    {
+      "type": "print",
+      "text": "TAB GEAVANCEERDE OPTIES"
+    },
+    {
+      "type": "print",
+      "text": "TAB METADATA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/ul/li[5]/a/strong"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-sources-und-0-value"
+      },
+      "text": "CBS / Leefstijlmonitor"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div[2]/div[3]/div[1]/div[3]/div[2]/div/div/div/form/div/div[4]/div/div/fieldset[5]/div/div[3]/div/div/div/div/textarea"
+      },
+      "text": "kernboodschap erbij"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-more-info-und-0-value"
+      },
+      "text": "http://www.meerinfo.nl"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-graph-more-info-und-0-title"
+      },
+      "text": "Meer Info"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@class='form-submit']"
+      }
     }
   ],
-  "shareState": false
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
 }
